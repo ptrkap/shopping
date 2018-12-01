@@ -2,6 +2,14 @@
     text-align: center;
 }
 
+#productNameInput {
+    width: 180px;
+}
+
+#productPriceInput {
+    width: 70px;
+}
+
 #productNameInput, #productPriceInput, #productAvailabilityInput {
     padding: 4px;
     border-color: rgb(100, 189, 255);
@@ -15,7 +23,7 @@
 #addProduct {
     position: relative;
     top: 8px;
-    margin-left: 2px;
+    margin-left: 4px;
 }
 
 #addProduct:hover {
@@ -23,16 +31,16 @@
 }
 
 #productDiscountInput {
+    display:inline-block;
     padding-right: 6px;
     padding-left: 2px;
-}
-
-#productDiscountInput {
+    padding-top: 2px;
+    padding-bottom: 3.5px;
+    width: 117px;
+    font: 400 13.3333px Arial;
     background-color: white;
     border-top: 2px solid rgb(67, 127, 171);
     border-left: 2px solid rgb(67, 127, 171);
-    padding-top: 3px;
-    padding-bottom: 3px;
     position: relative;
     top: 1px;
 }
@@ -43,5 +51,5 @@
 
 #productDiscountInput input {
     position: relative;
-    top:1px;
+    top: 3px;
 }

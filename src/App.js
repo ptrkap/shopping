@@ -5,16 +5,16 @@ import Total from './total/Total';
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div>
-        <h2 id="label">Shopping</h2>
-        <Add />
-        <Table />
-        <Total />
-      </div>
-    );
-  }
+	render() {
+		return (
+			<div>
+				<h2 id="label">Shopping</h2>
+				<Add />
+				<Table />
+				<Total />
+			</div>
+		);
+	}
 }
 
 export default App;

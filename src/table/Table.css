@@ -1,0 +1,38 @@
+#productsTable th, #productsTable td{
+    background-color: white;
+    color: rgb(50, 139, 205);
+    text-align: center;
+}
+
+#productsTable th.image, #productsTable td.image {
+    background-color: rgb(100, 189, 255);
+}
+
+#productsTable {
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+    left: 2px;
+}
+
+#productsTable td img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#productsTable td img:hover {
+    cursor: pointer;
+}
+
+#productsNameHeader {
+    width: 187px;
+}
+
+#productsPriceHeader {
+    width: 80px;
+}
+
+#productsDiscountHeader {
+    width: 124px;
+}
