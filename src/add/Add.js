@@ -5,7 +5,6 @@ import {connect} from 'react-redux';
 class Input extends Component {
 
     addProduct = () => {
-        console.dir(document.getElementById("productDiscountInput"));
         this.props.addProduct({
             name: document.getElementById("productNameInput").value,
             price: Number(document.getElementById("productPriceInput").value),

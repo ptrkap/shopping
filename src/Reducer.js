@@ -1,15 +1,29 @@
 export default function(state = [], action) {
+    let newState;
     switch(action.type) {
+        case "INIT_FROM_CACHE":
+            const cache = localStorage.getItem("products");
+            if (cache) {
+                newState = JSON.parse(cache);
+            } else {
+                newState = state;    
+            }
+            console.log(newState);
+            break;
         case "ADD_PRODUCT":
-            return [
+            newState = [
                 ...state,
                 action.product
-            ];
+            ]
+            localStorage.setItem("products", JSON.stringify(newState));
+            break;
         case "REMOVE_PRODUCT":
-            const modifiedState = [...state];
-            modifiedState.splice(action.id, 1);
-            return modifiedState;            
+            newState = [...state];
+            newState.splice(action.id, 1);
+            localStorage.setItem("products", JSON.stringify(newState));
+            break;
         default:
-            return state;
+            newState = state;
     }
+    return newState;
 }

@@ -6,6 +6,11 @@ import './App.css';
 import {connect} from 'react-redux';
 
 class App extends Component {
+
+	componentDidMount() {
+		this.props.init();
+	}
+
 	render() {
 		return (
 			<div>
@@ -24,4 +29,14 @@ function mapStateToProps(state) {
 	}
 }
 
-export default connect(mapStateToProps)(App);
+function mapDispatchToProps(dispatch) {
+	return (
+		{init: function() {
+			return dispatch({
+				type: "INIT_FROM_CACHE"
+			});
+		}}
+	);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
