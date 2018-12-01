@@ -1,9 +1,10 @@
 import React from 'react';
+import './Total.css';
 
 export default function() {
     return (
-        <div>
+        <h3 id="summary">
             Total: <span id="productsTotal">total1</span>
-        </div>
+        </h3>
     );
 }
