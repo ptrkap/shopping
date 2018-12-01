@@ -7,6 +7,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <h2>Shopping</h2>
         <Input />
         <Table />
         <Total />
