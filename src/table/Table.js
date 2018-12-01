@@ -3,6 +3,10 @@ import './Table.css';
 
 class Table extends Component {
 
+    removeProduct = (i) => () => {
+        console.log("removed", i);
+    }
+
     render() {
         return (
             <div>
@@ -20,19 +24,19 @@ class Table extends Component {
                             <td>product1</td>
                             <td>price1</td>
                             <td>-50%</td>
-                            <td className="image"><img src={require("./subtract.png")} alt="Remove"/></td>
+                            <td className="image"><img src={require("./subtract.png")} alt="Remove" onClick={this.removeProduct(0)}/></td>
                         </tr>
                         <tr>
                             <td>product2</td>
                             <td>price2</td>
                             <td></td>
-                            <td className="image"><img src={require("./subtract.png")} alt="Remove"/></td>
+                            <td className="image"><img src={require("./subtract.png")} alt="Remove" onClick={this.removeProduct(1)}/></td>
                         </tr>
                         <tr>
                             <td>product3</td>
                             <td>price3</td>
                             <td>-50%</td>
-                            <td className="image"><img src={require("./subtract.png")} alt="Remove"/></td>
+                            <td className="image"><img src={require("./subtract.png")} alt="Remove" onClick={this.removeProduct(2)}/></td>
                         </tr>
                     </tbody>
                 </table>
