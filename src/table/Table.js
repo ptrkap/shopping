@@ -5,7 +5,11 @@ import {connect} from 'react-redux';
 class Table extends Component {
 
     removeProduct = (i) => () => {
-        console.log("removed", i);
+        this.props.removeProduct(
+            {
+                id: i
+            }
+        );
     }
 
     render() {
