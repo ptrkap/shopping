@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Input from './input/Input';
+import Add from './add/Add';
 import Table from './table/Table';
 import Total from './total/Total';
 import './App.css';
@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div>
         <h2 id="label">Shopping</h2>
-        <Input />
+        <Add />
         <Table />
         <Total />
       </div>

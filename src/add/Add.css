@@ -1,0 +1,47 @@
+#add {
+    text-align: center;
+}
+
+#productNameInput, #productPriceInput, #productAvailabilityInput {
+    padding: 4px;
+    border-color: rgb(100, 189, 255);
+    color: rgb(50, 139, 205);
+}
+
+#productNameInput::placeholder, #productPriceInput::placeholder, #productAvailabilityInput::placeholder {
+    color: rgb(150, 189, 195);
+}
+
+#addProduct {
+    position: relative;
+    top: 8px;
+    margin-left: 2px;
+}
+
+#addProduct:hover {
+    cursor: pointer;
+}
+
+#productDiscountInput {
+    padding-right: 6px;
+    padding-left: 2px;
+}
+
+#productDiscountInput {
+    background-color: white;
+    border-top: 2px solid rgb(67, 127, 171);
+    border-left: 2px solid rgb(67, 127, 171);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: relative;
+    top: 1px;
+}
+
+#productDiscountInput {
+    color: rgb(50, 139, 205);
+}
+
+#productDiscountInput input {
+    position: relative;
+    top:1px;
+}

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Input.css';
+import './Add.css';
 
 class Input extends Component {
 
@@ -9,10 +9,10 @@ class Input extends Component {
 
     render() {
         return (
-            <div>
+            <div id="add">
                 <input id="productNameInput" placeholder="Product name"></input>
                 <input id="productPriceInput" placeholder="Product price"></input>
-                <input id="productAvailabilityInput" placeholder="Product availability"></input>
+                <span id="productDiscountInput"><input type="checkbox"/ >Discount -50%</span>
                 <img id="addProduct" src={require("./add.png")} alt="Add" onClick={this.addProduct}/>
             </div>
         );            

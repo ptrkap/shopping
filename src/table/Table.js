@@ -17,17 +17,17 @@ class Table extends Component {
                         <tr>
                             <td>product1</td>
                             <td>price1</td>
-                            <td>availability1</td>
+                            <td>-50%</td>
                         </tr>
                         <tr>
                             <td>product2</td>
                             <td>price2</td>
-                            <td>availability2</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>product3</td>
                             <td>price3</td>
-                            <td>availability3</td>
+                            <td>-50%</td>
                         </tr>
                     </tbody>
                 </table>
