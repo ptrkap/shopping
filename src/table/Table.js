@@ -14,7 +14,7 @@ class Table extends Component {
             return (
                 <tr key={i}>
                     <td>{product.name}</td>
-                    <td>{product.price}</td>
+                    <td>{product.price.toFixed(2)}</td>
                     <td>{product.discount ? "-50%" : ""}</td>
                     <td className="image"><img src={require("./subtract.png")} alt="Remove" onClick={that.removeProduct(i)}/></td>
                 </tr>
@@ -28,7 +28,7 @@ class Table extends Component {
                         <thead>
                             <tr>
                                 <th id="productsNameHeader">Product name</th>
-                                <th id="productsPriceHeader">Price</th>
+                                <th id="productsPriceHeader">Base price</th>
                                 <th id="productsDiscountHeader">Discount</th>
                                 <th className="image"></th>
                             </tr>

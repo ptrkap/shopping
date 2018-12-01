@@ -17,7 +17,7 @@ class Input extends Component {
         return (
             <div id="add">
                 <input id="productNameInput" placeholder="Product name"></input>
-                <input id="productPriceInput" placeholder="Price"></input>
+                <input id="productPriceInput" placeholder="Base Price"></input>
                 <div id="productDiscountDiv"><input id="productDiscountInput" type="checkbox" />Discount -50%</div>
                 <img id="addProduct" src={require("./add.png")} alt="Add" onClick={this.addProduct}/>
             </div>

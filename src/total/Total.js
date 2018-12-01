@@ -14,7 +14,7 @@ function calculateTotal(products) {
     for (let i = 0; i < products.length; i++) {
         if (products[i].discount) {
             total += products[i].price/2;
-        } else {
+        } else { 
             total += products[i].price;
         }
     }
