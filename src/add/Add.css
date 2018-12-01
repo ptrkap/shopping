@@ -30,7 +30,7 @@
     cursor: pointer;
 }
 
-#productDiscountInput {
+#productDiscountDiv {
     display:inline-block;
     padding-right: 6px;
     padding-left: 2px;
@@ -45,11 +45,11 @@
     top: 1px;
 }
 
-#productDiscountInput {
+#productDiscountDiv {
     color: rgb(50, 139, 205);
 }
 
-#productDiscountInput input {
+#productDiscountDiv input {
     position: relative;
     top: 2px;
 }

@@ -3,6 +3,7 @@ import Add from './add/Add';
 import Table from './table/Table';
 import Total from './total/Total';
 import './App.css';
+import {connect} from 'react-redux';
 
 class App extends Component {
 	render() {
@@ -11,10 +12,16 @@ class App extends Component {
 				<h2 id="label">Shopping</h2>
 				<Add />
 				<Table />
-				<Total />
+				<Total products={this.props.products}/>
 			</div>
 		);
 	}
 }
 
-export default App;
+function mapStateToProps(state) {
+	return {
+		products: state
+	}
+}
+
+export default connect(mapStateToProps)(App);
