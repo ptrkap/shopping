@@ -3,7 +3,7 @@ import React from 'react';
 export default function() {
     return (
         <div>
-            Total: <spane id="productsTotal">total1</spane>
+            Total: <span id="productsTotal">total1</span>
         </div>
     );
 }
