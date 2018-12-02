@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 
 class Input extends Component {
 
-    addProduct = () => {
+    addProduct() {
         this.props.addProduct({
             name: document.getElementById("productNameInput").value,
             price: Number(document.getElementById("productPriceInput").value),
@@ -18,7 +18,7 @@ class Input extends Component {
                 <input id="productNameInput" placeholder="Product name"></input>
                 <input id="productPriceInput" placeholder="Base Price"></input>
                 <div id="productDiscountDiv"><input id="productDiscountInput" type="checkbox" />Discount -50%</div>
-                <img id="addProduct" src={require("./add.png")} alt="Add" onClick={this.addProduct}/>
+                <img id="addProduct" src={require("./add.png")} alt="Add" onClick={this.addProduct.bind(this)}/>
             </div>
         );            
     }

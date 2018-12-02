@@ -4,12 +4,14 @@ import {connect} from 'react-redux';
 
 class Table extends Component {
 
-    removeProduct = (i) => () => {
-        this.props.removeProduct(
-            {
-                id: i
-            }
-        );
+    removeProduct(i){
+        return () => {
+            this.props.removeProduct(
+                {
+                    id: i
+                }
+            );
+        }
     }
 
     render() {
